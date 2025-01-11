@@ -1,0 +1,42 @@
+service:
+  port: 8888
+  name: "Omiboard"
+  maxUploadLimit: "10MB"
+  maxParameterLimit: "1000"
+
+cors:
+  enable: true
+  allows: [""]
+
+databases:
+  postgresql:
+    host: ""
+    database: ""
+    userName: ""
+    password: ""
+    port: 5432
+storage:
+  s3:
+    region: ""
+    endpoint: ""
+    accessKeyId: ""
+    accessKeySecret: ""
+    bucket: ""
+redis:
+  host: ""
+  port: 6379
+  userName: ""
+  password: ""
+smtp:
+  userName: ""
+  password: ""
+  service: gmail
+internalUrl:
+  client: ""
+jwt:
+  secretKey: ""
+  refreshSecretKey: ""
+  tokenExpire: 600
+  refreshTokenExpire: 604800
+  audience: ""
+  issuer: ""
